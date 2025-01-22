@@ -1,30 +1,33 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <v-app>
+    <v-app-bar :elevation="2">
+      <v-app-bar-title>Application Bar</v-app-bar-title>
+    </v-app-bar>
+    <v-navigation-drawer app permanent title="Navigation Drawer">
+      <v-list-item title="List Item 1"></v-list-item>
+      <v-list-item title="List Item 2"></v-list-item>
+    </v-navigation-drawer>
+
+    <v-main>
+      <HelloWorld app msg="Hello Vue 3 + Vite + TS + Vuetify 3" />
+    </v-main>
+
+    <v-bottom-navigation>
+      Bottom Navigation
+    </v-bottom-navigation>
+
+
+
+    <v-footer>
+      Footer
+    </v-footer>
+  </v-app>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
