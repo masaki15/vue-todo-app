@@ -1,31 +1,30 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+import TodoItemList from './components/TodoItemList.vue';
 </script>
 
 <template>
-  <v-app>
-    <v-app-bar :elevation="2">
-      <v-app-bar-title>Application Bar</v-app-bar-title>
-    </v-app-bar>
-    <v-navigation-drawer app permanent title="Navigation Drawer">
-      <v-list-item title="List Item 1"></v-list-item>
-      <v-list-item title="List Item 2"></v-list-item>
-    </v-navigation-drawer>
+	<v-app>
+		<v-app-bar :elevation="2">
+			<v-app-bar-title>Application Bar</v-app-bar-title>
+		</v-app-bar>
+		<v-navigation-drawer app permanent title="Navigation Drawer">
+			<v-list-item title="List Item 1"></v-list-item>
+			<v-list-item title="List Item 2"></v-list-item>
+		</v-navigation-drawer>
 
-    <v-main>
-      <HelloWorld app msg="Hello Vue 3 + Vite + TS + Vuetify 3" />
-    </v-main>
+		<v-main>
+			<TodoItemList />
+		</v-main>
 
-    <v-bottom-navigation>
-      Bottom Navigation
-    </v-bottom-navigation>
+		<v-bottom-navigation>
+			Bottom Navigation
+		</v-bottom-navigation>
 
 
-
-    <v-footer>
-      Footer
-    </v-footer>
-  </v-app>
+		<v-footer>
+			Footer
+		</v-footer>
+	</v-app>
 </template>
 
 <style scoped>
