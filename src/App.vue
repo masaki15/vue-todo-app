@@ -16,12 +16,8 @@ function goLogin() {
 <template>
   <v-app>
     <v-app-bar :elevation="2">
-      <template v-slot:prepend>
-        <v-app-bar-nav-icon icon="mdi-menu" variant="text" @click.stop="drawer= !drawer">
-          <v-icon icon="mdi-menu"></v-icon>
-        </v-app-bar-nav-icon>
-      </template>
-      <v-app-bar-title>Todo App</v-app-bar-title>
+      <v-app-bar-nav-icon icon="mdi-menu" variant="text" @click.stop="drawer= !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-title class="text-center">Todo App</v-app-bar-title>
       <v-btn class="bg-green-darken-1" @click="goLogin">ログイン</v-btn>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" temporary title="Navigation Drawer">
