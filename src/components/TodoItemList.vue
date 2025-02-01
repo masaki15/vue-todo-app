@@ -11,7 +11,6 @@ onMounted(async () =>{
 	try {
 		const list = await todoItemService.getToDoItems();
 		toDoItemList.value = list || [];
-		console.log(list);
 	} catch (error) {
 		console.error(error);
 	}
