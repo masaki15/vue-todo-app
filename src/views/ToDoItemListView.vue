@@ -3,7 +3,9 @@ import TodoItemList from '../components/TodoItemList.vue';
 </script>
 
 <template>
-  <TodoItemList />
+  <v-sheet class="ma-4">
+    <TodoItemList />
+  </v-sheet>
 </template>
 
 <style scoped>
