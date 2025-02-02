@@ -28,7 +28,7 @@ onMounted(async () => {
             <small class="mb-6">{{item.date}}</small>
           </v-list-item-action>
         </template>
-        <v-divider v-if="index < toDoItemList.length -1"></v-divider>
+        <v-divider v-if="index < toDoItemList.length -1" inset></v-divider>
       </v-list-item>
     </v-list>
   </v-card>
