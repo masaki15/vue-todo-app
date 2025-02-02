@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import {ToDoItemService} from '../services/ToDoItemService.ts';
-import type {ToDoItem} from '../entities/ToDoItem.ts';
+import {TodoItemService} from '../services/TodoItemService.ts';
+import type {TodoItem} from '../entities/TodoItem.ts';
 import {onMounted, ref} from 'vue';
 
-const todoItemService = new ToDoItemService();
+const todoItemService = new TodoItemService();
 
-const toDoItemList = ref<ToDoItem[]>([]);
+const toDoItemList = ref<TodoItem[]>([]);
 
 onMounted(async () => {
   try {

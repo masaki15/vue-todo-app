@@ -1,18 +1,18 @@
 import {createRouter, createWebHistory} from 'vue-router';
 
-const ToDoItemListView = () => import('../views/ToDoItemListView.vue');
+const TodoItemListView = () => import('../views/TodoItemListView.vue');
 const LoginView = () => import('../views/LoginView.vue');
 
 const routes = [
     {
         path: '/list',
         name: 'todoItemList',
-        component: ToDoItemListView
+        component: TodoItemListView
     },
     {
         path: '/',
         name: 'home',
-        component: ToDoItemListView
+        component: TodoItemListView
     }, {
         path: '/login',
         name: 'login',

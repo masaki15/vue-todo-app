@@ -1,4 +1,4 @@
-export class ToDoItem{
+export class TodoItem {
     id: number;
     title: string;
     content: string;
